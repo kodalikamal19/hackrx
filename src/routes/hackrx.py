@@ -136,10 +136,10 @@ class PDFProcessor:
             raise Exception(f"Failed to extract text from PDF: {str(e)}")
 
 class QueryProcessor:
-    """Efficient query processing using Gemini"""
+    """Efficient query processing using Gemini"""   
     
     def __init__(self):
-        self.model = genai.GenerativeModel("gemini-2.5-flash-latest")
+        self.model = genai.GenerativeModel("gemini-1.5-pro-latest")
         self.memory_manager = MemoryManager()
         self.streaming_processor = StreamingProcessor(max_memory_mb=400)
     
