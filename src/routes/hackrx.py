@@ -139,7 +139,7 @@ class QueryProcessor:
     """Efficient query processing using Gemini"""
     
     def __init__(self):
-        self.model = genai.GenerativeModel("gemini-pro")
+        self.model = genai.GenerativeModel("gemini-2.5-flash-latest")
         self.memory_manager = MemoryManager()
         self.streaming_processor = StreamingProcessor(max_memory_mb=400)
     
